@@ -1,0 +1,36 @@
+"""
+PDF to Markdown Converter - Configuration File
+
+This is a sample configuration file for the PDF to Markdown converter.
+Copy this file and modify it to customize the converter behavior.
+"""
+
+{
+  "output": {
+    "markdown_extension": ".md",
+    "image_format": "png",
+    "image_quality": 90,
+    "images_dir": "images"
+  },
+  "extraction": {
+    "min_text_confidence": 0.7,
+    "force_ocr": false
+  },
+  "ocr": {
+    "language": "eng",
+    "config": "--psm 6",
+    "dpi": 300
+  },
+  "ai": {
+    "enabled": true,
+    "model": "gemini-pro",
+    "temperature": 0.2,
+    "chunk_size": 4000
+  },
+  "parallel": {
+    "max_workers": null,
+    "use_processes": true,
+    "chunk_size": 1,
+    "show_progress": true
+  }
+}
